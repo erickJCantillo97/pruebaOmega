@@ -68,4 +68,17 @@ class Consulta
             return null;
         }
     }
+
+    public function resetData()
+    {
+        $db = $this->conexion->conectar();
+        $query = "DELETE FROM persons";
+        $stmt = $db->prepare($query);
+        if ($stmt) {
+            $stmt->execute();
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

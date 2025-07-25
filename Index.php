@@ -24,7 +24,7 @@ if(isset($_GET['id'])){
 
     <div class="container mt-2">
         <h3 class="text-center">Prueba de Mega 
-            <a href="controller.php?api=reset" class="btn btn-primary float-end">Actualizar</a>
+            <a href="controller.php?api=reset" class="btn btn-primary float-end">Reestablecer Datos</a>
         </h3>
         <form action="controller.php" method="POST" enctype="multipart/form-data">
             <div class="row">

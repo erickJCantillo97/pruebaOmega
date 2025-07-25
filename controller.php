@@ -25,6 +25,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 if($_SERVER['REQUEST_METHOD'] == "GET"){
     $consulta = new Consulta();
+    $consulta->resetData();
     $consulta->getDataApi();
     header("Location: index.php");
 }
